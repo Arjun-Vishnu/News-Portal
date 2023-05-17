@@ -1,0 +1,18 @@
+<div class="container" style="font-family: 'Courier New', Courier, monospace;">
+  <div class="badge bg-danger fs-2 h1">{{title}}</div>
+  <form method="POST" action="/medicines/edit/{{article._id}}">
+    <div id="form-group">
+      <label>Name</label>
+      <input class="form-control" name="title" type="text" value="{{article.title}}">
+    </div>
+    <div id="form-group">
+      <label>Price</label>
+      <input class="form-control" name="author" type="text" value="{{article.author}}">
+    </div>
+    <div id="form-group">
+      <label>Details</label>
+      <textarea class="form-control" name="body">{{article.body}}</textarea>
+    </div>
+    <input class="btn btn-primary mt-3" type="submit" value="submit">
+  </form>
+</div>

@@ -1,0 +1,17 @@
+ <h1>{{title}}</h1>
+    <form method="POST" action="/articles/add">
+        <div id="form-group">
+            <label>Title</label>
+            <input class="form-control" name="title" type="text">
+        </div>
+        <div id="form-group">
+            <label>Author</label>
+            <input class="form-control" name="author" type="text">
+        </div>
+        <div id="form-group">
+            <label>Body</label>
+            <textarea class="form-control" name="body"></textarea>
+            <br>
+        </div>
+        <input class="btn btn-primary" type="submit" value="submit">
+    </form>
